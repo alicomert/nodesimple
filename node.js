@@ -85,7 +85,6 @@ const schedules = [
   { delay: 86400000},
   { start: '10:00', end: '18:01', delay: 1200000 },
   { delay: 60000 },
-  { start: '09:55', end: '18:55', delay: 10000 },
   { start: '22.00', end: '22:05', delay: 10000 },
 ];
 
