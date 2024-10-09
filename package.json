@@ -4,6 +4,7 @@
   "description": "Node.js project for scheduled API calls with Telegram notifications",
   "main": "node.js",
   "dependencies": {
-    "axios": "^1.4.0"
+    "axios": "^1.4.0",
+    "moment-timezone": "^0.5.43"
   }
 }
