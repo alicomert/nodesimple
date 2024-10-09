@@ -1,5 +1,6 @@
 const http = require('http');
 const axios = require('axios');
+const moment = require('moment-timezone'); // İstanbul zaman dilimi için
 
 async function sendTelegramMessage(chatId, text) {
   const telegramAPI = `https://api.telegram.org/bot6624881831:AAGeAR9ZULEZzcWOjYI3zBH03xUQxeVKBHY/sendMessage`;
@@ -18,13 +19,14 @@ function checkTimeWindow(schedule) {
     return true;
   }
 
-  const now = new Date();
+  const now = moment().tz('Europe/Istanbul'); // Şu anki zaman İstanbul'a göre
   const startTime = schedule.start.split(':').map(Number);
   const endTime = schedule.end.split(':').map(Number);
-  const startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), startTime[0], startTime[1]);
-  const endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), endTime[0], endTime[1]);
+  
+  const startDate = moment().tz('Europe/Istanbul').set({ hour: startTime[0], minute: startTime[1], second: 0 });
+  const endDate = moment().tz('Europe/Istanbul').set({ hour: endTime[0], minute: endTime[1], second: 0 });
 
-  return now >= startDate && now <= endDate;
+  return now.isBetween(startDate, endDate);
 }
 
 async function fetchUrl(url, schedule) {
@@ -36,7 +38,6 @@ async function fetchUrl(url, schedule) {
     } catch (error) {
       console.error('Hata:', error);
       sendTelegramMessage(930115244, `Link problem: ${url}`);
-	  
     }
     await new Promise(resolve => setTimeout(resolve, schedule.delay || 0));
   }
@@ -69,23 +70,21 @@ const urls = [
   'https://borsify.com/api/anasayfatrend.php',
   'https://borsify.com/yonetim/uyelikislemleri.php',
   'https://borsify.com/api/eskisinyal.php'
-
-
 ];
 
 const schedules = [
   { start: '10:20', end: '11:00', delay: 0 },
   { start: '20:29', end: '20:30', delay: 40000 },
-  {  start: '20:35', end: '21:40', delay: 0 },
   { start: '20:35', end: '21:40', delay: 0 },
-	{start: '20:35', end: '21:40', delay: 0 },
+  { start: '20:35', end: '21:40', delay: 0 },
+  { start: '20:35', end: '21:40', delay: 0 },
   { start: '09:55', end: '18:55', delay: 10000 },
   { start: '09:56', end: '18:55', delay: 10000 },
   { start: '20:29', end: '20:30', delay: 20000 },
-  { delay: 86400000},
+  { delay: 86400000 },
   { start: '10:00', end: '18:01', delay: 1200000 },
   { delay: 60000 },
-  { start: '22.00', end: '22:05', delay: 10000 },
+  { start: '22:00', end: '22:05', delay: 10000 },
 ];
 
 // Yarım saatte bir Telegram'a "Node.js aktif" mesajı gönder
