@@ -59,7 +59,6 @@ async function fetchDataWithTiming(urls, schedules) {
 
 const urls = [
   'https://api.borsify.com/image/img.php',
-  'https://api.borsify.com/sinyal/anasayfa.php',
   'https://api.borsify.com/sinyal/sinyalyeni.php',
   'https://api.borsify.com/sinyal/sinyalcontrol.php',
   'https://api.borsify.com/sinyal/sinyalold.php',
@@ -69,12 +68,12 @@ const urls = [
   'https://finansliyorum.com/sitemap.php',
   'https://borsify.com/api/anasayfatrend.php',
   'https://borsify.com/yonetim/uyelikislemleri.php',
-  'https://borsify.com/api/eskisinyal.php'
+  'https://borsify.com/api/eskisinyal.php',
+  'https://borsify.com/api/savepn.php'
 ];
 
 const schedules = [
   { start: '10:20', end: '11:00', delay: 0 },
-  { start: '20:29', end: '20:30', delay: 40000 },
   { start: '20:35', end: '21:40', delay: 0 },
   { start: '20:35', end: '21:40', delay: 0 },
   { start: '20:35', end: '21:40', delay: 0 },
@@ -85,6 +84,8 @@ const schedules = [
   { start: '10:00', end: '18:01', delay: 1200000 },
   { delay: 60000 },
   { start: '22:00', end: '22:05', delay: 10000 },
+    { start: '09:57', end: '18:55', delay: 30000 },
+
 ];
 
 // Yarım saatte bir Telegram'a "Node.js aktif" mesajı gönder
