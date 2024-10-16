@@ -70,9 +70,6 @@ const urls = [
   'https://borsify.com/yonetim/uyelikislemleri.php',
   'https://borsify.com/api/eskisinyal.php',
   'https://borsify.com/api/savepn.php',
-  'https://borsify.com/apiex/mat/loginmat.php',
-  'https://borsify.com/apiex/mat/matnews.php'
-  
 ];
 
 const schedules = [
@@ -88,8 +85,6 @@ const schedules = [
   { delay: 60000 },
   { start: '22:00', end: '22:05', delay: 10000 },
   { start: '09:57', end: '18:55', delay: 10000 },
-  {delay: 900000 },
-  {delay: 60000 },
 
 
 ];
