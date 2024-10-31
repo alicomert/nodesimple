@@ -67,23 +67,21 @@ const urls = [
   'https://api.borsify.com/sinyal/sinyal_dongu.php',
   'https://finansliyorum.com/sitemap.php',
   'https://borsify.com/api/anasayfatrend.php',
-  'https://borsify.com/yonetim/uyelikislemleri.php',
   'https://borsify.com/api/eskisinyal.php',
   'https://borsify.com/api/savepn.php',
 ];
 
 const schedules = [
   { start: '10:20', end: '11:00', delay: 0 },
-  { start: '20:35', end: '21:40', delay: 0 },
-  { start: '20:35', end: '21:40', delay: 0 },
-  { start: '20:35', end: '21:40', delay: 0 },
+  {delay: 0 },
+  { delay: 0 },
+  { delay: 0 },
   { start: '09:55', end: '18:55', delay: 10000 },
   { start: '09:56', end: '18:55', delay: 10000 },
   { start: '20:29', end: '20:30', delay: 20000 },
   { delay: 86400000 },
   { start: '10:00', end: '18:01', delay: 1200000 },
-  { delay: 60000 },
-  { start: '22:00', end: '22:05', delay: 10000 },
+  { delay: 10000 },
   { start: '09:57', end: '18:55', delay: 10000 },
 
 
