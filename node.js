@@ -73,7 +73,7 @@ const urls = [
 
 const schedules = [
   { start: '10:20', end: '11:00', delay: 0 },
-  { start: '20:35', end: '22:30', delay: 0 },
+  {delay: 0 },
   { start: '20:35', end: '22:30', delay: 0 },
   { start: '20:35', end: '22:30', delay: 0 },
   { start: '09:55', end: '18:55', delay: 10000 },
