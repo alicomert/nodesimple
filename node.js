@@ -67,7 +67,7 @@ const urls = [
   'https://finansliyorum.com/sitemap.php',
   'https://borsify.com/api/eskisinyal.php',
   'https://borsify.com/api/savepn.php',
-  'http://localhost/api/saveteknik4h.php',
+  'https://borsify.com/api/saveteknik4h.php',
 ];
 
 const schedules = [
