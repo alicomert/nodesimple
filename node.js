@@ -68,6 +68,7 @@ const urls = [
   'https://borsify.com/api/eskisinyal.php',
   'https://borsify.com/api/savepn.php',
   'https://borsify.com/api/saveteknik4h.php',
+'https://borsify.com/oto/kap.php',
 ];
 
 const schedules = [
@@ -81,7 +82,7 @@ const schedules = [
   { start: '21:00', end: '22:30', delay: 60000 },
   { start: '09:57', end: '18:55', delay: 0 },
   { start: '09:57', end: '18:55', delay: 0 },
-
+{ delay: 10000 },
 
 
 ];
