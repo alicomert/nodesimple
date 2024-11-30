@@ -59,11 +59,7 @@ async function fetchDataWithTiming(urls, schedules) {
 
 const urls = [
   'https://api.borsify.com/image/img.php',
-  'https://api.borsify.com/sinyal/sinyalyeni.php',
-  'https://api.borsify.com/sinyal/sinyalcontrol.php',
-  'https://api.borsify.com/sinyal/sinyalold.php',
   'https://api.borsify.com/datasave/datasave.php',
-  'https://api.borsify.com/sinyal/sinyal_dongu.php',
   'https://finansliyorum.com/sitemap.php',
   'https://borsify.com/api/eskisinyal.php',
   'https://borsify.com/api/savepn.php',
@@ -73,11 +69,7 @@ const urls = [
 
 const schedules = [
   { start: '10:20', end: '11:00', delay: 0 },
-  { start: '20:35', end: '22:30', delay: 0 },
-  { start: '20:35', end: '22:30', delay: 0 },
-  { start: '20:35', end: '22:30', delay: 0 },
   { start: '09:55', end: '18:55', delay: 10000 },
-  { start: '20:29', end: '20:30', delay: 20000 },
   { delay: 86400000 },
   { start: '21:00', end: '22:30', delay: 60000 },
   { start: '09:57', end: '18:55', delay: 7000 },
