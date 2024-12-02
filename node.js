@@ -61,9 +61,8 @@ const urls = [
   'https://api.borsify.com/image/img.php',
   'https://api.borsify.com/datasave/datasave.php',
   'https://finansliyorum.com/sitemap.php',
-  'https://borsify.com/api/eskisinyal.php',
-  'https://borsify.com/api/savepn.php',
-  'https://borsify.com/api/saveteknik4h.php',
+  'https://borsify.com/oto/savepn.php',
+  'https://borsify.com/oto/saveteknik.php',
 'https://borsify.com/oto/kap.php',
 ];
 
@@ -71,10 +70,9 @@ const schedules = [
   { start: '10:20', end: '11:00', delay: 0 },
   { start: '09:55', end: '18:55', delay: 10000 },
   { delay: 86400000 },
-  { start: '21:00', end: '22:30', delay: 60000 },
   { start: '09:57', end: '18:55', delay: 7000 },
   { start: '09:57', end: '18:55', delay: 7000 },
-{ delay: 10000 },
+{ delay: 30000 },
 
 
 ];
