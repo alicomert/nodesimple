@@ -71,10 +71,10 @@ const schedules = [
   { start: '10:20', end: '11:00', delay: 0 },
   { start: '09:55', end: '18:55', delay: 10000 },
   { delay: 86400000 },
-  { start: '09:57', end: '18:55', delay: 0 },
-  { start: '09:57', end: '18:55', delay: 0 },
+  { start: '09:57', end: '18:55', delay: 7000 },
+  { start: '09:57', end: '18:55', delay: 7000 },
   { delay: 30000 },
-  { start: '09:57', end: '18:55', delay: 0 },
+  { start: '09:57', end: '18:55', delay: 7000 },
 
 
 
