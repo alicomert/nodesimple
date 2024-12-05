@@ -65,6 +65,7 @@ const urls = [
   'https://borsify.com/oto/saveteknik.php',
 'https://borsify.com/oto/kap.php',
   'https://borsify.com/oto/savemumveri.php',
+  'https://borsify.com/oto/savesignals.php',
 ];
 
 const schedules = [
@@ -74,7 +75,8 @@ const schedules = [
   { start: '09:57', end: '18:55', delay: 7000 },
   { start: '09:57', end: '18:55', delay: 7000 },
   { delay: 30000 },
-  { start: '09:57', end: '18:55', delay: 7000 },
+  { start: '09:57', end: '18:55', delay: 0 },
+  { start: '17:30', end: '18:10', delay: 0 },
 
 
 
