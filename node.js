@@ -62,7 +62,6 @@ const urls = [
   'https://finansliyorum.com/sitemap.php',
   'https://borsify.com/oto/savepn.php',
   'https://borsify.com/oto/saveteknik.php',
-'https://borsify.com/oto/kap.php',
   'https://borsify.com/oto/savemumveri.php',
 ];
 
@@ -71,8 +70,7 @@ const schedules = [
   { delay: 86400000 },
   { start: '09:57', end: '18:55', delay: 7000 },
   { start: '09:57', end: '18:55', delay: 7000 },
-  { delay: 30000 },
-  { start: '09:57', end: '18:55', delay: 5 },
+  { start: '04:10', end: '18:55', delay: 5 },
 
 
 
