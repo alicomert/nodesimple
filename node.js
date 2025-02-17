@@ -63,6 +63,8 @@ const urls = [
   'https://borsify.com/oto/savepn.php',
   'https://borsify.com/oto/saveteknik.php',
   'https://borsify.com/oto/savemumveri.php',
+  'https://borsify.com/oto/hissebist.php',
+  'https://borsify.com/signal/girisoto.php'
 ];
 
 // Zamanlama ayarları
@@ -71,7 +73,10 @@ const schedules = [
   { delay: 86400000 },
   { start: '09:57', end: '18:55', delay: 7000 },
   { start: '09:57', end: '18:55', delay: 7000 },
-  { start: '04:10', end: '18:55', delay: 5 },
+  { start: '09:55', end: '18:55', delay: 0 },
+  { start: '09:55', end: '18:55', delay: 60000 },
+  { start: '20:00', end: '22:00', delay: 120000 },
+
 ];
 
 // Telegram'a belirli aralıklarla mesaj gönderme
