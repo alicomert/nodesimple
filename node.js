@@ -58,6 +58,7 @@ async function fetchDataWithTiming(urls, schedules) {
 
 // URL listesi
 const urls = [
+  'https://borsify.com/signal/anasayfadurum.php',
   'https://api.borsify.com/image/img.php',
   'https://finansliyorum.com/sitemap.php',
   'https://borsify.com/oto/savepn.php',
@@ -74,6 +75,7 @@ const urls = [
 
 // Zamanlama ayarları
 const schedules = [
+  { start: '20:01', end: '20:02', delay: 30000 },
   { start: '10:20', end: '11:00', delay: 0 },
   { delay: 86400000 },
   { start: '09:57', end: '18:55', delay: 7000 },
