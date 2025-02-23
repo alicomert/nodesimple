@@ -72,7 +72,8 @@ const urls = [
   'https://borsify.com/signal/teyitbekleyen.php',
   'https://finansliyorum.com/api/kriptobot.php',
   'https://finansliyorum.com/api-bist/hissebot.php',
-  'https://finansliyorum.com/api-bist/haber.php!
+  'https://finansliyorum.com/api-bist/haber.php',
+  'https://finansliyorum.com/api/haber.php'
   
 ];
 
@@ -90,6 +91,7 @@ const schedules = [
   { start: '20:00', end: '22:00', delay: 120000 },
   { start: '20:10', end: '21:30', delay: 0 },
   { start: '21:10', end: '21:30', delay: 30000 },
+  { delay: 0 },
   { delay: 0 },
   { delay: 0 },
   { delay: 0 }
